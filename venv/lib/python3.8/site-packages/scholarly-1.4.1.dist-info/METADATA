@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: scholarly
+Version: 1.4.1
+Summary: Simple access to Google Scholar authors and citations
+Home-page: https://github.com/scholarly-python-package/scholarly
+Author: Steven A. Cholewiak, Panos Ipeirotis, Victor Silva, Arun Kannawadi
+Author-email: steven@cholewiak.com, panos@stern.nyu.edu, vsilva@ualberta.ca, arunkannawadi@astro.princeton.edu
+License: Unlicense
+Keywords: Google Scholar,academics,citations
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: arrow
+Requires-Dist: beautifulsoup4
+Requires-Dist: bibtexparser
+Requires-Dist: requests[security]
+Requires-Dist: requests[socks]
+Requires-Dist: stem
+Requires-Dist: fake-useragent
+Requires-Dist: PySocks
+Requires-Dist: selenium
+Requires-Dist: python-dotenv
+Requires-Dist: free-proxy
+Requires-Dist: sphinx-rtd-theme
+Requires-Dist: typing-extensions
+
+[![Python package](https://github.com/scholarly-python-package/scholarly/workflows/Python%20package/badge.svg?branch=master)](https://github.com/scholarly-python-package/scholarly/actions?query=branch%3Amaster)
+
+[![Documentation Status](https://readthedocs.org/projects/scholarly/badge/?version=latest)](https://scholarly.readthedocs.io/en/latest/?badge=latest)
+
+# scholarly
+
+scholarly is a module that allows you to retrieve author and publication information from [Google Scholar](https://scholar.google.com) in a friendly, Pythonic way.
+
+## Important Note
+
+This is version 1.4 of the `scholarly` library. There has been a major refactor in the way the library operates and it's code structure and it **will break** most existing code, based on the previous (v0.x) versions.
+
+## Documentation
+
+Check the [documentation](https://scholarly.readthedocs.io/en/latest/?badge=latest) for a complete reference and a quickstart quide.
+
+## Installation
+
+Use `pip` to install from pypi:
+
+```bash
+pip3 install scholarly
+```
+
+or `pip` to install from github:
+
+```bash
+pip3 install -U git+https://github.com/scholarly-python-package/scholarly.git
+```
+
+## Tests
+
+### Run the tests
+
+To run tests execute the `test_module.py` file as:
+
+```bash
+python3 test_module
+```
+
+or
+
+```bash
+python3 -m unittest -v test_module.py
+```
+
+## Build Docs
+
+To build the documentation execute the make file as:
+
+```bash
+make html
+```
+
+## License
+
+The original code that this project was forked from was released by [Luciano Bello](https://github.com/lbello/chalmers-web) under a [WTFPL](http://www.wtfpl.net/) license. In keeping with this mentality, all code is released under the [Unlicense](http://unlicense.org/).
+
+
